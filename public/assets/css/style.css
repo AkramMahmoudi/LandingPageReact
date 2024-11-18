@@ -411,7 +411,7 @@ button {
 #carouselExampleIndicators .carousel-control-next {
      width: 66px;
      height: 66px;
-     background-color: #ffffff;
+     background-color: #f75808;
      color: #000000;
      font-size: 20px;
      opacity: 1;
@@ -431,7 +431,7 @@ button {
 #carouselExampleIndicators .carousel-control-next:hover,
 #carouselExampleIndicators .carousel-control-prev:focus,
 #carouselExampleIndicators .carousel-control-prev:hover {
-     color: #d96226;
+     color: #000000;
 }
 
 .icon-arrow {
@@ -523,12 +523,12 @@ button {
      #carouselExampleIndicators .carousel-control-next {
           width: 60px;
           height: 60px;
-          background-color: #ffffff;
+          background-color: #f75808;
           color: #000000;
           font-size: 20px;
           opacity: 1;
           border-radius: 50px;
-          top: 85%;
+          top: 90%;
      }
 
      #carouselExampleIndicators .carousel-control-prev {
@@ -543,7 +543,7 @@ button {
      #carouselExampleIndicators .carousel-control-next:hover,
      #carouselExampleIndicators .carousel-control-prev:focus,
      #carouselExampleIndicators .carousel-control-prev:hover {
-          color: #d96226;
+          color: #000000;
      }
 
      .icon-arrow {

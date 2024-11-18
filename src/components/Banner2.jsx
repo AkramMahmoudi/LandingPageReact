@@ -54,7 +54,7 @@ function Banner2() {
                                 <figure>
                                   <img
                                     className="img_responsive"
-                                    src="./assets/images/banner_img.png"
+                                    src="./assets/images/dattes-ravier-algerie.png"
                                     alt=""
                                   />
                                 </figure>
@@ -85,7 +85,7 @@ function Banner2() {
                                 <figure>
                                   <img
                                     className="img_responsive"
-                                    src="./assets/images/banner_img.png"
+                                    src="./assets/images/dattes-ravier-algerie.png"
                                     alt=""
                                   />
                                 </figure>
@@ -116,7 +116,7 @@ function Banner2() {
                                 <figure>
                                   <img
                                     className="img_responsive"
-                                    src="./assets/images/banner_img.png"
+                                    src="./assets/images/dattes-ravier-algerie.png"
                                     alt=""
                                   />
                                 </figure>
