@@ -6,7 +6,7 @@ function Banner2() {
     <>
       <>
         {/* top */}
-        <div className="full_bg">
+        <div className="full_bg" data-scroll-index="0">
           <div className="slider_main">
             <div className="container-fluid">
               <div className="row">

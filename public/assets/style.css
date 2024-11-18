@@ -9,6 +9,8 @@ body {
 	font-size: 14px;
 }
 
+@import url(https://unpkg.com/@webpixels/css@1.0/dist/index.css);
+
 a {
 	color: #d96226;
 }
@@ -393,8 +395,8 @@ h6 {
 }
 
 .testimonial {
-	background: white;
-	background: linear-gradient(to left, #d96226, #bd7d5d);
+	background: #ef580d;
+	background: linear-gradient(to left, #d96226, #d96226);
 	padding: 100px 0px;
 	position: relative;
 }
@@ -427,8 +429,8 @@ h6 {
 }
 
 .bx-wrapper {
-	border: solid #d96226 !important;
-	background: rgba(254, 254, 254, 0.81) !important;
+	border: none #d96226 !important;
+	background: #d96226 !important;
 	border-radius: 5px !important;
 	box-shadow: none !important;
 }
@@ -620,6 +622,31 @@ input {
 }
 
 @media all and (max-width: 768px) {
+	.card {
+
+		border: 2px solid rgba(0, 0, 0, .125);
+
+	}
+
+	.testimonial-card .card-up {
+		height: 120px;
+		overflow: hidden;
+		border-top-left-radius: 0.25rem;
+		border-top-right-radius: 0.25rem;
+		/* border: 3px solid #d96226; */
+	}
+
+
+	.testimonial-card .avatar {
+		width: 110px;
+		margin-top: -60px;
+		overflow: hidden;
+		border: 3px solid #d96226;
+		border-radius: 50%;
+	}
+
+
+
 
 
 	.nav-scroll .navbar-brand img,
