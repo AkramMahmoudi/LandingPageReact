@@ -591,17 +591,17 @@ input {
 	border-radius: 7px;
 }
 
-.footer-copy {
+/* .footer-copy {
 	background: #ffffff;
 	color: #242424;
 	font-size: 13px;
 	text-align: center;
 	padding: 15px 0px;
-}
+} */
 
-.footer-copy p {
+/* .footer-copy p {
 	margin-bottom: 0px;
-}
+} */
 
 @media all and (max-width:991px) {
 	.navbar .navbar-collapse {
@@ -761,7 +761,7 @@ input {
 		width: 120px;
 	}
 
-	.footer-copy p {
+	/* .footer-copy p {
 		font-size: 10px;
-	}
+	} */
 }
