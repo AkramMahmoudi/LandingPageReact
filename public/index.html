@@ -1,43 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>Applight Template By W3 Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+    <!-- Font Google -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+      rel="stylesheet"
+    />
+
+
+    <!-- new -->
+    <!-- basic -->
+    <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  -->
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- scrollIt js -->
+    <script src="./assets/js/scrollIt.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <!-- <script src="./assets/js/custom.js"></script> -->
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <script>
+      // Initialize WOW.js
+      var wow = new WOW();
+      wow.init();
+
+      // Avoid conflicts with jQuery and other libraries
+      var $jq = jQuery.noConflict();
+
+      $jq(document).ready(function () {
+        // Initialize bxSlider
+        $jq(".slider").bxSlider({
+          pager: false,
+        });
+        $jq('#blogCarousel').carousel({
+          interval: 5000
+       });
+  
+
+        // Handle video popup display
+        $jq("#video-icon").on("click", function (e) {
+          e.preventDefault();
+          $jq(".video-popup").css("display", "flex");
+          $jq(".iframe-src").slideDown();
+        });
+
+        // Handle video popup close
+        $jq(".video-popup").on("click", function (e) {
+          var $target = e.target.nodeName;
+          var video_src = $jq(this).find("iframe").attr("src");
+          if ($target !== "IFRAME") {
+            $jq(".video-popup").fadeOut();
+            $jq(".iframe-src").slideUp();
+            $jq(".video-popup iframe").attr("src", " ");
+            $jq(".video-popup iframe").attr("src", video_src);
+          }
+        });
+      });
+
+      // Handle navbar scroll behavior
+      $jq(window).on("scroll", function () {
+        var bodyScroll = $jq(window).scrollTop(),
+          navbar = $jq(".navbar");
+/*
+        if (bodyScroll > 50) {
+          $jq(".navbar-logo img").attr("src", "./assets/images/logo-black.png");
+          navbar.addClass("nav-scroll");
+        } else {
+          $jq(".navbar-logo img").attr("src", "./assets/images/logo.png");
+          navbar.removeClass("nav-scroll");
+        }
+          */
+      });
+
+      // On window load
+      $jq(window).on("load", function () {
+        var bodyScroll = $jq(window).scrollTop(),
+          navbar = $jq(".navbar");
+
+        /*if (bodyScroll > 50) {
+          $jq(".navbar-logo img").attr("src", "./assets/images/logo-black.png");
+          navbar.addClass("nav-scroll");
+        } else {
+          $jq(".navbar-logo img").attr("src", "./assets/images/logo-white.png");
+          navbar.removeClass("nav-scroll");
+        }
+        */
+        // Initialize scrollIt plugin
+        $jq.scrollIt({
+          easing: "swing", // The easing function for animation
+          scrollTime: 900, // Animation duration in ms
+          activeClass: "active", // Class for active nav element
+          onPageChange: null, // Callback on page change
+          topOffset: -63, // Offset for the scroll
+        });
+      });
+
+      (function($) {
+        //Function to animate slider captions
+        function doAnimations(elems) {
+          //Cache the animationend event in a variable
+          var animEndEv = "webkitAnimationEnd animationend";
+      
+          elems.each(function() {
+            var $this = $(this),
+              $animationType = $this.data("animation");
+            $this.addClass($animationType).one(animEndEv, function() {
+              $this.removeClass($animationType);
+            });
+          });
+        }
+      
+        //Variables on page load
+        var $myCarousel = $("#carouselExampleIndicators"),
+          $firstAnimatingElems = $myCarousel
+            .find(".carousel-item:first")
+            .find("[data-animation ^= 'animated']");
+      
+        //Initialize carousel
+        $myCarousel.carousel();
+      
+        //Animate captions in first slide on page load
+        doAnimations($firstAnimatingElems);
+      
+        //Other slides to be animated on carousel slide event
+        $myCarousel.on("slide.bs.carousel", function(e) {
+          var $animatingElems = $(e.relatedTarget).find(
+            "[data-animation ^= 'animated']"
+          );
+          doAnimations($animatingElems);
+        });
+      })(jQuery);
+
+      
+ 
+    </script>
   </body>
 </html>
