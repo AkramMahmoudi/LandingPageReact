@@ -347,6 +347,38 @@ h6 {
 	margin-top: 40px;
 }
 
+.feature-mobile {
+
+	justify-content: center;
+	/* Centers the image horizontally */
+	align-items: center;
+	/* Centers the image vertically */
+	display: flex;
+	height: 100%;
+	/* Ensures the container spans the full height */
+	/* width: 100%; */
+	/* Ensures the container spans the full width */
+}
+
+.product-img {
+	border: 5px solid #d96226;
+	/* Border width and color */
+	border-radius: 15px;
+	/* Rounded corners */
+	/* position: relative; */
+	/* Position relative to its normal flow */
+	/* top: 150px; */
+	max-width: 100%;
+	/* Ensures the image is responsive */
+	object-fit: cover;
+	/* Move the image 20px up */
+	/* max-width: 100%;
+	/* Ensures the image is responsive */
+	height: fit-content;
+
+}
+
+
 .single-feature h5 {
 	font-size: 16px;
 }
@@ -698,6 +730,22 @@ input {
 	.single-feature {
 		margin-bottom: 20px;
 		margin-top: 20px;
+	}
+
+	.feature-mobile {
+		height: auto;
+		/* Adjust height for small screens */
+		justify-content: center;
+		/* Keep content centered */
+		margin-bottom: 20px;
+		/* Add spacing */
+	}
+
+	.product-img {
+		max-width: 80%;
+		/* Limit image width for small screens */
+		height: auto;
+		/* Maintain aspect ratio */
 	}
 
 	.team-detail {

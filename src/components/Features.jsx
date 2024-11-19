@@ -72,16 +72,17 @@ function Features() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-4 d-none d-md-block d-lg-block">
+
+                  <div className="col-md-4 col-sm-12">
                     <div className="feature-mobile">
-                      {" "}
                       <img
-                        src="./assets/images/iphone-screen-with-shadow.png"
-                        className="img-fluid wow fadeInUp"
+                        src="./assets/images/noyauxdattes-031216-111-removebg-preview.png"
+                        className="product-img img-fluid wow fadeInUp"
                         alt="Company Logo"
-                      />{" "}
+                      />
                     </div>
                   </div>
+
                   <div className="col-md-4 col-sm-12">
                     <div
                       className="media single-feature wow fadeInUp"
@@ -126,7 +127,6 @@ function Features() {
                       data-wow-delay="0.6s"
                     >
                       <div className="media-left icon-border media-right-margin">
-                        {" "}
                         <span className="fa fa-hdd" aria-hidden="true" />{" "}
                       </div>
                       <div className="media-body text-left">
