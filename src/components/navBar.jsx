@@ -7,8 +7,11 @@ function NavBar() {
       <nav className="navbar navbar-expand-lg">
         <div className="container">
           <a href="/" className="navbar-brand navbar-logo">
-            <img src="./assets/images/logo.png" alt="logo" className="logo-1" />
-            
+            <img
+              src="./assets/images/9622184.png"
+              alt="logo"
+              className="logo-1"
+            />
           </a>
           <button
             className="navbar-toggler"

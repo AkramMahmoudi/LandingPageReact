@@ -59,10 +59,16 @@ h6 {
 	color: white !important;
 }
 
+.logo-1 {
+	height: 70px;
+	width: 80px;
+
+}
+
 .navbar .navbar-brand {}
 
 .navbar .nav-item {
-	margin: 0 5px;
+	margin: 0 0px;
 	padding: 0;
 }
 
@@ -636,6 +642,14 @@ input {
 } */
 
 @media all and (max-width:991px) {
+	.container {
+		width: 92%;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
 	.navbar .navbar-collapse {
 		overflow: auto;
 		background: #d96226;
@@ -654,6 +668,8 @@ input {
 }
 
 @media all and (max-width: 768px) {
+
+
 	.card {
 
 		border: 2px solid rgba(0, 0, 0, .125);

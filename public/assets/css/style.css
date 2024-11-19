@@ -682,7 +682,7 @@ button {
           border-radius: 10px;
      }
 
-     .subsci_btn {
+     /* .subsci_btn {
           font-size: 17px;
           transition: all 0.5s ease-in-out;
           background-color: #d96226;
@@ -695,7 +695,7 @@ button {
           border-radius: 10px;
           border: none;
           cursor: pointer;
-     }
+     } */
 
      .subsci_btn:hover {
           background-color: #000;
@@ -768,7 +768,7 @@ button {
           border-radius: 10px;
           border: none;
           cursor: pointer;
-          margin-right: 12%;
+          margin-right: 8.5%;
      }
 
 
